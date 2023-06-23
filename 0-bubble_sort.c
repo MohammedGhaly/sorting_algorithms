@@ -28,3 +28,19 @@ void bubble_sort(int *array, size_t size)
 		end--;
 	}
 }
+
+/**
+ * swap - swaps the positions of 2 elements
+ * @array: array of integers
+ * @i1: index of first element
+ * @i2: index of second element
+ * Return: Success
+ */
+void swap(int *array, int i1, int i2)
+{
+	int temp;
+
+	temp = array[i1];
+	array[i1] = array[i2];
+	array[i2] = temp;
+}
